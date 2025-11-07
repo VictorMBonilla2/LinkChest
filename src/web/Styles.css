@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+:root {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /*Colores --bg-color: #bdbdbd;*/
+    --bg-color: #232433;
+    --primary-color: #464FFA;
+    --secundary-color: #464FFA;
+    --aux1-color: #6568A5;
+    --aux2-color: #5F617A;
+    --aux3-color: #444550;
+
+    /* Variantes dinámicas con color-mix */
+    --primary-light: color-mix(in srgb, var(--primary-color) 80%, white);
+    --primary-dark: color-mix(in srgb, var(--primary-color) 80%, black);
+    --primary-transparent: color-mix(in srgb, var(--primary-color) 80%, transparent);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    /* base para rem */
+    scroll-behavior: smooth;
+    /* scroll suave */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: var(--text-color, #333);
+    min-height: 100vh;
+    background-color: var(--bg-color, #fff);
+    -webkit-font-smoothing: antialiased;
+}
+
+/*Configuración Global*/
+ul,
+ol {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    max-width: 100%;
+    display: block;
+    object-fit: contain;
+    object-position: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*Scroll Configuracion*/
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* ----------- ----------- ----------- ----------- ----------- ----------- ----------- -----------*/
+
+.contenedor {
+    width: 100%;
+
+}

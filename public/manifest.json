@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "LinkChest",
+  "version": "1.0.0",
+  "description": "Tu gestor de enlaces preferido.",
+  "action": {
+    "default_popup": "src/popup/index.html"
+  },
+  "options_page": "src/options/index.html",
+  "icons": {
+    "48": "Logo.Svg"
+  },
+  "background": {
+  "service_worker": "assets/background.js",
+  "type": "module"
+  },
+  "permissions": [
+    "storage",         
+    "cookies",           
+    "identity",       
+    "scripting",
+    "alarms",
+    "tabs",
+    "notifications"
+  ],
+  "host_permissions": [
+    "http://localhost:4000/*", 
+    "https://tu-backend.com/*" 
+  ],
+  "oauth2": {
+    "client_id": "477943011083-lpg0i2b1gfojr3jns4g4g9b50taa0t01.apps.googleusercontent.com",
+    "scopes": [
+      "openid",
+      "email",
+      "profile"
+    ]
+  }
+}

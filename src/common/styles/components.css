@@ -1,0 +1,9 @@
+
+
+.bg_popup{
+    @apply p-3 w-[600px]   h-[600px] bg-[var(--bg-color)];
+}
+
+.bg_web{
+    @apply w-dvw h-dvh bg-[var(--bg-color)]
+}
