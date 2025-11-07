@@ -107,16 +107,6 @@ Actualmente funciona como un panel administrativo, pensado para evolucionar en u
 
 ---
 
-## ✅ Características clave
-
-- UI minimalista con Tailwind
-- Manejo de estados globales mediante Context
-- Integración directa con la API de LinkChest
-- Código modular y organizado
-- Soporte para modo Popup, Options y Web
-
----
-
 ## 📄 Licencia
 
 Este proyecto utiliza la licencia **MIT**.
